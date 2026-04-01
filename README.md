@@ -1,12 +1,17 @@
-Password Generator 🔐
+1. The program starts by asking the user to enter the desired password length.
 
-This Python program generates random passwords based on user preferences.
+2. It then asks the user to choose the type of password:
+   - (a) Alphanumeric (letters + numbers)
+   - (n) Numeric only
+   - (l) Alphabetic only
 
-Features:
-- Custom password length
-- Multiple password types:
-  • Alphanumeric (letters + numbers)
-  • Numeric only
-  • Alphabetic only
+3. Based on the user's choice, the program selects the appropriate character set:
+   - string.ascii_letters → for alphabets
+   - string.digits → for numbers
+   - combination of both → for alphanumeric passwords
 
-The program uses random selection to ensure each password is unique and unpredictable.
+4. The program uses the random module to randomly pick characters from the selected set.
+
+5. A loop (or generator expression) runs for the given length and builds the password.
+
+6. Finally, the generated password is displayed to the user.
